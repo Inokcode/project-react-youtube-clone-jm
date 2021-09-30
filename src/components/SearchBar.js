@@ -1,10 +1,18 @@
-import React from 'react';
+import { Paper, TextField } from '@mui/material';
+import React, { useState } from 'react';
 
 const SearchBar = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+  const handleSubmit = () => {};
   return (
-    <div>
-      <h1>Search bar</h1>
-    </div>
+    <Paper elevation={6} style={{ padding: '25px' }}>
+      <form onSubmit={handleSubmit}>
+        <TextField fullWidth label="Search..." onChange={handleChange} />
+      </form>
+    </Paper>
   );
 };
 

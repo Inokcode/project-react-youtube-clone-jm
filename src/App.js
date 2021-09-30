@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>YouTube Clone App</h1>
-      {/* <Grid container spacing={16} justifyContent="center">
+      <Grid container spacing={16} justifyContent="center">
         <Grid item xs={12}>
           <Grid container spacing={16}>
             <Grid item xs={12}>
@@ -22,7 +22,7 @@ function App() {
             </Grid>
           </Grid>
         </Grid>
-      </Grid> */}
+      </Grid>
     </div>
   );
 }
